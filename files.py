@@ -6,12 +6,12 @@ df = st.file_uploader('Upload the csv file: ',type=['csv','xlxs'])
 #st.table(df)
 
 st.subheader("Loading the csv file")
-df = pd.read_csv('/Users/yashika/geeksforgeeks/Streamlit/ref/Products.csv')
+df = pd.read_csv('Products.csv')
 if df is not None:
     st.table(df.head(5))
 
 st.subheader('Uploading the imageS:')
-st.image('/Users/yashika/geeksforgeeks/Streamlit/ref/img.png')
+st.image('img.png')
 
 st.subheader('Uploading the imageS:')
 img = st.file_uploader('upload the image file: ', type = ['png','jpeg'])
